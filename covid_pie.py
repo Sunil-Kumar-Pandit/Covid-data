@@ -8,24 +8,6 @@ url='https://api.rootnet.in/covid19-in/stats/history'
 rep=req.urlopen(url).read().decode()
 info=json.loads(rep)
 
-'''def data(temp):
-    if temp=='india':
-        
-        for i in range(len(info['data'])):
-            x.append( info['data'][i]['summary']['discharged'])
-            y.append(info['data'][i]['summary']['deaths'])
-            z.append(info["data"][i]['summary']['total'])
-            a.append(info['data'][i]['summary']['confirmedCasesIndian'])
-        
-    else:
-        for i in range(len(info['data'])):
-            if temp in info['data'][i]['regional'][i]['loc']:
-                
-                x.append( info['data'][i]['regional']['discharged'])
-                y.append(info['data'][i]['regional']['deaths'])
-                z.append(info["data"][i]['regional']['totalConfirmed'])
-            
- '''       
 def onclick():
     x=[]
     y=[]
