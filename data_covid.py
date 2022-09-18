@@ -7,6 +7,7 @@ info=json.loads(rep)
 x=[]
 y=[]
 z=[]
+
 for i in range(len(info['data'])):
     x.append( info['data'][i]['summary']['discharged'])
     y.append(info['data'][i]['summary']['deaths'])
